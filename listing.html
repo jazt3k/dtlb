@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="style/images/favicon.png">
+
+<title></title>
+<meta name="description" content="" />
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/settings.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="style/js/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+    
+   
+    <nav class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+      <li class=" current-menu-item current_page_item" ><a class="page_1" href="">Accueil</a></li><li class="" ><a class="page_4" href="l-horlogerie/">l'horlogerie</a></li><li class="" ><a class="page_5" href="la-joaillerie/">la joaillerie</a></li><li class="" ><a class="page_3" href="nous-contacter/">Nous Contacter</a></li>
+      </ul>
+    </nav>
+  </div>
+<!--/.nav-collapse --> 
+</div>
+<!--/.navbar -->
+
+
+<div class="container" >
+
+<div class="row">
+           
+      <div class="col-sm-12">
+      
+      <h1>Nos nouveaut&eacute;s horlog&egrave;res</h1>
+      
+          <div class="filter-menu">
+            <ul>
+              <li><a class="active filter" href="#" data-filter=".mix-all">All</a></li>
+              <li><a class="filter" href="#" data-filter=".conceptual">Conceptual</a></li>
+              <li><a class="filter" href="#" data-filter=".black-white">Black & White</a></li>
+              <li><a class="filter" href="#" data-filter=".portrait">Portrait</a></li>
+              <li><a class="filter" href="#" data-filter=".landscape">Landscape</a></li>
+            </ul>
+          </div>
+  	          
+      </div>
+
+      <div id="mixit-up">
+        <div class="col-sm-3 col-xs-6 list-wrap text-center mix conceptual mix-all ">
+          <div class="listing">
+            <a rel="1" href="http://www.cbgarchitecture.com/fr/france/Frejus-Marie-A">
+              <span><i class="fa fa-search"></i></span>
+            </a>
+            <img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg">
+          </div>
+        	<h2>CHOPARD Alfa Romeo</h2>
+        	<p>Tout Chopard</p>
+        </div>
+        
+        <div class="col-sm-3 col-xs-6 list-wrap text-center mix  conceptual mix-all black-white">
+          <div class="listing">
+            <a rel="1" href="http://www.cbgarchitecture.com/fr/france/Frejus-Marie-A">
+              <span><i class="fa fa-search"></i></span>
+            </a>
+            <img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg">
+          </div>
+          <h2>CHOPARD Alfa Romeo</h2>
+          <p>Tout Chopard</p>
+        </div>
+        
+        <div class="col-sm-3 col-xs-6 list-wrap text-center mix mix-all portrait">
+          <div class="listing">
+            <a rel="1" href="http://www.cbgarchitecture.com/fr/france/Frejus-Marie-A">
+              <span><i class="fa fa-search"></i></span>
+            </a>
+            <img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg">
+          </div>
+          <h2>CHOPARD Alfa Romeo</h2>
+          <p>Tout Chopard</p>
+        </div>
+        
+        <div class="col-sm-3 col-xs-6 list-wrap text-center mix mix-all landscape">
+          <div class="listing">
+            <a rel="1" href="http://www.cbgarchitecture.com/fr/france/Frejus-Marie-A">
+              <span><i class="fa fa-search"></i></span>
+            </a>
+            <img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg">
+          </div>
+          <h2>CHOPARD Alfa Romeo</h2>
+          <p>Tout Chopard</p>
+        </div>
+      </div>
+</div><!-- end row -->
+</div><!-- end container -->
+
+
+
+<!-- /.body-wrapper --> 
+<script src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/twitter-bootstrap-hover-dropdown.min.js"></script> 
+<script src="js/retina.js"></script> 
+<script src="js/classie.js"></script> 
+<!--script src="js/scripts.js"></script-->
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/SM_Controller_listings.js"></script>
+<script>
+
+
+	$('.item').magnificPopup({
+	  delegate: 'a', // child items selector, by clicking on it popup will open
+	  type: 'image',
+	  gallery: {
+	    enabled: true, // set to true to enable gallery
+	    preload: [1,2], // read about this option in next Lazy-loading section	  
+	    navigateByImgClick: true,	 
+	    arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+	    tPrev: 'Previous (Left arrow key)', // title for left button
+	    tNext: 'Next (Right arrow key)', // title for right button
+	    tCounter: '%curr% of %total%' // markup of counter
+	  }
+	});
+</script>
+
+
+</body>
+</html>
