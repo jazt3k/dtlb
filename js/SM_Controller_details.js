@@ -1,10 +1,11 @@
+// Needs revolution plugin from themepunch
 function SM_Controller() {
 
 	var self = this;
 
 	this.init = function() {
 		self.bind_events();
-		$('#slides').superslides();
+		self.startRevolution();
 		$("#product_info_wrap").css({left: -$("#product_info_wrap").width()});
 	};
 
@@ -21,6 +22,31 @@ function SM_Controller() {
 	            $("#project_info").addClass("hidden");
 	        }
 	    });
+	};
+
+	this.startRevolution = function() {
+		var revapi;
+	
+		   revapi = $('.tp-banner').revolution(
+			{
+				delay:15000,
+				startwidth:1170,
+				startheight:600,
+				hideThumbs:1,
+				fullWidth:"off",
+				fullScreen:"on",
+				soloArrowLeftHalign:"right",
+				soloArrowLeftValign:"bottom",
+				soloArrowLeftHOffset:90,
+				soloArrowLeftVOffset:20,
+	
+				soloArrowRightHalign:"right",
+				soloArrowRightValign:"bottom",
+				soloArrowRightHOffset:20,
+				soloArrowRightVOffset:20
+			});
+	
+	
 	};
 };
 

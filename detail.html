@@ -15,7 +15,7 @@
 <![endif]-->
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -51,10 +51,10 @@
 <!--/.navbar -->
 
 <div class="tp-banner-container">
-	<div id="slides" class="tp-banner" >
-		<ul class="slides-container">
+		<div class="tp-banner" >
+			<ul>
 			<!-- SLIDE  -->
-			<li >
+			<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="">
 					<!-- MAIN IMAGE -->
 				<img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg">
 					<!-- LAYERS -->
@@ -87,9 +87,9 @@
 				</div-->
 			</li>
 				<!-- SLIDE  -->
-			<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="temp/Corum-Admirals-9490B5.jpg"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="">
+			<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="">
 						<!-- MAIN IMAGE -->
-						<img src="temp/Corum-Admirals-9490B5.jpg" data-lazyload="temp/Corum-Admirals-9490B5.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+						<!--img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg" data-lazyload="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 						<!-- LAYERS -->
 								
 				<!--div class="tp-caption customin customout"
@@ -117,16 +117,15 @@
 						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 						<p><a href="#">Savoir plus...</a></p>
 				</div-->
-				<img src="http://www.cbgarchitecture.com/images/photos_medium/dsc4150.jpg">
+				<img src="http://www.cbgarchitecture.com/images/photos_large/13.jpg">
 			</li>						
 		</ul>
-		<nav class="slides-navigation ">
-		    <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-		    <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-		  </nav>
+		
 		<div class="tp-bannertimer tp-bottom"></div>
 	</div>
 </div>
+
+
 
 <a class="plus" data-toggle="popover" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac mauris et sem condimentum fringilla. Morbi et rutrum est. Pellentesque feugiat dolor ligula, ac rhoncus tortor cursus vitae."><i class="fa fa-plus"></i></a>
 
@@ -154,51 +153,24 @@
 
 	
 <!-- get jQuery from the google apis -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.min.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/popover.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.superslides.min.js"></script>
-<script type="text/javascript" src="js/SM_Controller_details.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
-	
     $("a.plus").popover({});
 });
 </script>
 	
 	
 <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->   
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>   
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-<script type="text/javascript">
-	var revapi;
-	/*
-	jQuery(document).ready(function() {
-	
-		   revapi = jQuery('.tp-banner').revolution(
-			{
-				delay:15000,
-				startwidth:1170,
-				startheight:600,
-				hideThumbs:1,
-				fullWidth:"off",
-				fullScreen:"on",
-				soloArrowLeftHalign:"right",
-				soloArrowLeftValign:"bottom",
-				soloArrowLeftHOffset:90,
-				soloArrowLeftVOffset:20,
-	
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"bottom",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:20
-			});
-	
-	});*/	//ready
-</script>		
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>   
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/SM_Controller_details.js"></script>	
 
 </body>
 </html>
